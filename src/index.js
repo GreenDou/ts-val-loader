@@ -1,7 +1,12 @@
 import Module from "module";
 import { pathToFileURL } from "url";
 
+import { register } from "ts-node";
+
 import schema from "./options.json";
+
+// Register typescript compiler
+register();
 
 const parentModule = module;
 
